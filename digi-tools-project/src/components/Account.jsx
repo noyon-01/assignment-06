@@ -1,6 +1,6 @@
 import account from "../assets/user.png";
-// import package from "../assets/package.png";
-// import rocket from "../assets/rocket.png";
+import packages from "../assets/package.png";
+import rocket from "../assets/rocket.png";
 
 export default function Account() {
   return (
@@ -26,9 +26,9 @@ export default function Account() {
         </div>
 
         <div className="card bg-base-100 w-90 shadow-sm relative text-center">
-          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">01</span>
+          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">02</span>
           <figure>
-            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={account} />
+            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={packages} />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl font-bold">Choose Products</h2>
@@ -39,9 +39,9 @@ export default function Account() {
         </div>
 
         <div className="card bg-base-100 w-90 shadow-sm relative text-center">
-          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">01</span>
+          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">03</span>
           <figure>
-            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={account} />
+            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={rocket} />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl font-bold">Start Creating</h2>
