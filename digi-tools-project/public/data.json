@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ATS-friendly templates.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "file-text"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build a stunning personal portfolio website easily.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Responsive design", "Easy customization", "SEO optimized"],
+    "icon": "globe"
+  },
+  {
+    "id": 3,
+    "name": "Interview Preparation Guide",
+    "description": "Ace your interviews with curated questions and answers.",
+    "price": 4.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Top interview Q&A", "Real examples", "Tips & tricks"],
+    "icon": "help-circle"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker Dashboard",
+    "description": "Track your job applications and progress in one place.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Application tracking", "Status updates", "Analytics"],
+    "icon": "bar-chart"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Growth Toolkit",
+    "description": "Grow your personal brand on LinkedIn faster.",
+    "price": 12.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Post templates", "Profile optimization", "Content ideas"],
+    "icon": "linkedin"
+  },
+  {
+    "id": 6,
+    "name": "Frontend Components Library",
+    "description": "Reusable UI components for faster development.",
+    "price": 14.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["50+ components", "Tailwind support", "Clean code"],
+    "icon": "layout"
+  },
+  {
+    "id": 7,
+    "name": "Coding Practice Platform",
+    "description": "Improve your coding skills with real challenges.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Daily challenges", "Leaderboard", "Solutions"],
+    "icon": "code"
+  },
+  {
+    "id": 8,
+    "name": "UI/UX Design Kit",
+    "description": "Design modern and user-friendly interfaces easily.",
+    "price": 24.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Figma templates", "Design system", "Icons & assets"],
+    "icon": "figma"
+  },
+  {
+    "id": 9,
+    "name": "JavaScript Mastery Course",
+    "description": "Master JavaScript from basics to advanced concepts.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Beginner to advanced", "Projects included", "Lifetime access"],
+    "icon": "book-open"
+  }
+]
