@@ -2,12 +2,8 @@ import React, { use, useState } from "react";
 import Products from "./Products";
 import Cart from "./Cart";
 
-const DigitalTools = ({ toolsPromise }) => {
+const DigitalTools = ({ toolsPromise, addProduct, setAddProduct }) => {
   const [isProducts, setIsProducts] = useState("products");
-
-  const [addProduct, setAddProduct] = useState([]);
-
-
   const data = use(toolsPromise);
 
   return (
