@@ -46,14 +46,14 @@ export default function Navber({ addProduct }) {
         </ul>
       </div>
       <div className="navbar-end">
-        <span className="mr-4 flex relative">
+        <span className="mr-6 flex relative">
           <LuShoppingCart />
           <div className="badge badge-primary badge-xs absolute left-2.5 bottom-2.5">{addProduct.length}</div>
         </span>
-        <a className="mr-4" href="">
+        <a className="mr-6 font-semibold">
           Login
         </a>
-        <a className="btn">Get Started</a>
+        <a className="btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white">Get Started</a>
       </div>
     </div>
   );

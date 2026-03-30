@@ -3,6 +3,8 @@ import "./App.css";
 import DigitalTools from "./components/DigitalTools";
 import Navber from "./components/Navber";
 import Hero from "./components/Hero";
+import Count from "./components/Count";
+import Account from "./components/Account";
 
 const toolsData = async () => {
   const res = await fetch("/public/data.json");
@@ -18,6 +20,7 @@ function App() {
     <>
       <Navber addProduct={addProduct} />
       <Hero />
+      <Count />
       <Suspense fallback={<div className="flex justify-center items-center mt-5"><span className="loading loading-bars loading-xl"></span></div>}>
         <DigitalTools
           toolsPromise={toolsPromise}
@@ -25,6 +28,7 @@ function App() {
           setAddProduct={setAddProduct}
         />
       </Suspense>
+      <Account />
     </>
   );
 }

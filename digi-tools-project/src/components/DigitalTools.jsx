@@ -16,12 +16,12 @@ const DigitalTools = ({ toolsPromise, addProduct, setAddProduct }) => {
         <br />
         to boost your productivity and creativity.
       </p>
-      <div className="flex justify-center items-center mt-2">
+      <div className="flex justify-center items-center mx-auto mt-4 btn w-40 rounded-3xl">
         <button
           onClick={() => setIsProducts("products")}
           className={
             isProducts === "products"
-              ? `btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white `
+              ? `btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white`
               : `btn rounded-3xl`
           }
         >
@@ -31,7 +31,7 @@ const DigitalTools = ({ toolsPromise, addProduct, setAddProduct }) => {
           onClick={() => setIsProducts("cart")}
           className={
             isProducts === "cart"
-              ? `btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white `
+              ? `btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white`
               : `btn rounded-3xl`
           }
         >
