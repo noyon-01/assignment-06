@@ -5,6 +5,7 @@ import Navber from "./components/Navber";
 import Hero from "./components/Hero";
 import Count from "./components/Count";
 import Account from "./components/Account";
+import Price from "./components/Price";
 
 const toolsData = async () => {
   const res = await fetch("/public/data.json");
@@ -29,6 +30,7 @@ function App() {
         />
       </Suspense>
       <Account />
+      <Price />
     </>
   );
 }

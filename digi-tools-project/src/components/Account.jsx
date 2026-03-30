@@ -11,7 +11,7 @@ export default function Account() {
       <p className="text-[#627382] text-center">
         Start using premium digital tools in minutes, not hours.
       </p>
-      <div className="grid grid-cols-3 gap-5 mt-12 pb-20">
+      <div className="grid grid-cols-3 gap-8 mt-12 pb-20">
         <div className="card bg-base-100 w-90 shadow-sm relative text-center">
           <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">01</span>
           <figure>
