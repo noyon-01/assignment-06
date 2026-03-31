@@ -9,7 +9,7 @@ import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
 
 const toolsData = async () => {
-  const res = await fetch("/public/data.json");
+  const res = await fetch("/data.json");
   return res.json();
 };
 

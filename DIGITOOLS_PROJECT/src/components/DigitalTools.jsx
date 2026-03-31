@@ -1,3 +1,6 @@
+// digitool change kora availavleproduct korta hoba
+
+
 import React, { use, useState } from "react";
 import Products from "./Products";
 import Cart from "./Cart";
