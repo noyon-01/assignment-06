@@ -1,46 +1,32 @@
-import { Suspense, useState } from "react";
-import DigitalTools from "./components/DigitalTools";
-import Navber from "./components/Navber";
-import Hero from "./components/Hero";
-import Count from "./components/Count";
-import Account from "./components/Account";
-import Price from "./components/Price";
-import Workflow from "./components/Workflow";
-import Footer from "./components/Footer";
-
-const toolsData = async () => {
-  const res = await fetch("/data.json");
-  return res.json();
-};
+import { useState } from "react";
+import { ToastContainer } from 'react-toastify';
+import AvailableProducts from "./components/Available_Products_Section/AvailableProducts";
+import Navber from "./components/Navber_Section/Navber";
+import Hero from "./components/Hero_Section/Hero";
+import Count from "./components/Count_Section/Count";
+import Account from "./components/Account_Section/Account";
+import Price from "./components/Price_Section/Price";
+import Workflow from "./components/Workflow_Section/Workflow";
+import Footer from "./components/Footer_Section/Footer";
 
 function App() {
   const [addProduct, setAddProduct] = useState([]);
 
-  const toolsPromise = toolsData();
-
   return (
-    <>
+    <div>
       <Navber addProduct={addProduct} />
       <Hero />
       <Count />
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center mt-5">
-            <span className="loading loading-bars loading-xl"></span>
-          </div>
-        }
-      >
-        <DigitalTools
-          toolsPromise={toolsPromise}
-          addProduct={addProduct}
-          setAddProduct={setAddProduct}
-        />
-      </Suspense>
+      <AvailableProducts
+        addProduct={addProduct}
+        setAddProduct={setAddProduct}
+      />
+      <ToastContainer />
       <Account />
       <Price />
       <Workflow />
       <Footer />
-    </>
+    </div>
   );
 }
 

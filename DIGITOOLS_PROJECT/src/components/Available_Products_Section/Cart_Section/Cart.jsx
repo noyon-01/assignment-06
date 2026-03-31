@@ -1,7 +1,10 @@
+import { toast } from "react-toastify";
+
 const Cart = ({ addProduct, setAddProduct }) => {
   const handleRemoveBtn = (product) => {
     const filterProduct = addProduct.filter((p) => p.name !== product.name);
     setAddProduct(filterProduct);
+    toast.success("Item is successfully Remove");
   };
 
   const total = addProduct.reduce((sum, item) => sum + item.price, 0);
@@ -23,16 +26,23 @@ const Cart = ({ addProduct, setAddProduct }) => {
             return (
               <div
                 key={index}
-                className="flex justify-between items-center mt-5 bg-[#F9FAFC] p-5 rounded"
+                className="flex justify-between items-center w-110 md:w-2xl lg:w-5xl mt-5 bg-[#F9FAFC] p-5 rounded"
               >
-                <div>
-                  <h1 className="text-[20px] font-semibold">{product.name}</h1>
-                  <p className="text-[#627382]">${product.price}</p>
+                <div className="flex justify-center items-center gap-3">
+                  <div className="border-2 border-gray-300 bg-white p-3 rounded-full">
+                    <img src={product.img} alt={product.name} />
+                  </div>
+                  <div>
+                    <h1 className="text-[20px] font-semibold">
+                      {product.name}
+                    </h1>
+                    <p className="text-[#627382]">${product.price}</p>
+                  </div>
                 </div>
                 <div>
                   <button
                     onClick={() => handleRemoveBtn(product)}
-                    className="text-[#FF3980] font-bold"
+                    className="text-[#FF3980] font-bold cursor-pointer"
                   >
                     Remove
                   </button>

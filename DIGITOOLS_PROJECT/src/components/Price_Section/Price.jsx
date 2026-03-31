@@ -1,14 +1,14 @@
 export default function Price() {
   return (
     <div className="max-w-7xl mx-auto pt-16 my-16 flex flex-col justify-center items-center">
-      <h1 className="text-5xl font-bold text-center mb-4">
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-4">
         Simple, Transparent Pricing
       </h1>
       <p className="text-[#627382] text-center">
         Choose the plan that fits your needs. Upgrade or downgrade anytime.
       </p>
 
-      <div className="grid grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         <div className="card w-90 shadow-sm bg-[#F2F2F2]">
           <div className="card-body">
             <h1 className="text-2xl font-bold">Starter</h1>

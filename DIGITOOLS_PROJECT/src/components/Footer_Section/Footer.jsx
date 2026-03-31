@@ -5,14 +5,14 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <div className="max-w-7xl mx-auto">
-      <footer className="footer sm:footer-horizontal bg-black text-white p-25">
-        <p>
+      <footer className="footer sm:footer-horizontal bg-black text-white p-10 md:p-25">
+        <div>
           <h1 className="text-5xl font-bold mb-4">DigiTools</h1>
           <p>
             Premium digital tools for creators, <br /> professionals, and
             businesses. Work smarter <br /> with our suite of powerful tools.
           </p>
-        </p>
+        </div>
         <nav>
           <h6 className="footer-title">Product</h6>
           <a className="link link-hover">Features</a>
@@ -52,7 +52,10 @@ export default function Footer() {
 
       <div className="w-full h-[1px] bg-gray-700"></div>
 
-      <footer className="footer flex justify-between items-center bg-black text-white p-6 max-w-7xl px-24 mx-auto">
+      <footer
+        className="footer flex flex-col md:flex-row md:justify-between items-center bg-black 
+      text-white p-6 max-w-7xl md:px-24 mx-auto"
+      >
         <p>© {new Date().getFullYear()} 2026 Digitools. All rights reserved.</p>
         <div className="flex justify-center items-center gap-5">
           <p className="text-[#627382]">Privacy Policy</p>

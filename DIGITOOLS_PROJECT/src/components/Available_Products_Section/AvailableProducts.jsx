@@ -1,17 +1,19 @@
-// digitool change kora availavleproduct korta hoba
+import React, { Suspense, useState } from "react";
+import Products from "./Product_Section/Products";
+import Cart from "./Cart_Section/Cart";
 
+const toolsData = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+};
 
-import React, { use, useState } from "react";
-import Products from "./Products";
-import Cart from "./Cart";
-
-const DigitalTools = ({ toolsPromise, addProduct, setAddProduct }) => {
+const AvailableProducts = ({ addProduct, setAddProduct }) => {
   const [isProducts, setIsProducts] = useState("products");
-  const data = use(toolsPromise);
+  const toolsPromise = toolsData();
 
   return (
-    <div className="max-w-7xl mx-auto p-8">
-      <h1 className="text-5xl font-bold text-center mb-4">
+    <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-4">
         Premium Digital Tools
       </h1>
       <p className="text-[#627382] text-center">
@@ -42,17 +44,25 @@ const DigitalTools = ({ toolsPromise, addProduct, setAddProduct }) => {
         </button>
       </div>
 
-      {isProducts === "products" ? (
-        <Products
-          data={data}
-          addProduct={addProduct}
-          setAddProduct={setAddProduct}
-        />
-      ) : (
-        <Cart addProduct={addProduct} setAddProduct={setAddProduct} />
-      )}
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center mt-5">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        }
+      >
+        {isProducts === "products" ? (
+          <Products
+            toolsPromise={toolsPromise}
+            addProduct={addProduct}
+            setAddProduct={setAddProduct}
+          />
+        ) : (
+          <Cart addProduct={addProduct} setAddProduct={setAddProduct} />
+        )}
+      </Suspense>
     </div>
   );
 };
 
-export default DigitalTools;
+export default AvailableProducts;

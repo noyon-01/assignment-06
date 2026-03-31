@@ -1,24 +1,33 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const SingleProduct = ({ product, addProduct, setAddProduct }) => {
   const [addBtn, setAddBtn] = useState(false);
   const handleAddToCart = () => {
     const isFound = addProduct.find((item) => item.id === product.id);
     if (isFound) {
-      alert("Item is alredy added to cart");
+      toast.error("Item is alredy added to cart");
       return;
     }
 
     setAddProduct([...addProduct, product]);
+    toast.success("Item is add to cart");
     setAddBtn(true);
   };
 
   return (
-    <div className="card w-96 bg-base-100 shadow-sm">
+    <div className="card w-85 md:w-96 bg-base-100 shadow-sm">
       <div className="card-body">
         <div className="flex justify-between">
-          <p>img</p>
-          <p className="text-right">{product.tag}</p>
+          <div className="border-2 border-gray-300 p-3 rounded-full"><img src={product.img} alt={product.name} /></div>
+          {/* {`text-right ${product.tag === "Best Seller" ? "" : "bg-white" "bg-red"`} */}
+          <p className={
+            product.tag === "Best Seller"
+              ? `text-[#BB4D00] font-bold text-right`
+              : product.tag == "Popular"
+              ? `text-[#7525F8] font-bold text-right`
+              : `text-[#0A883E] font-bold text-right`
+          }>{product.tag}</p>
         </div>
         <div className="">
           <h2 className="text-2xl font-bold">{product.name}</h2>

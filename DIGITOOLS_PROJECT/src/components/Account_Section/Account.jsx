@@ -1,18 +1,18 @@
-import account from "../assets/user.png";
-import packages from "../assets/package.png";
-import rocket from "../assets/rocket.png";
+import account from "../../assets/user.png";
+import packages from "../../assets/package.png";
+import rocket from "../../assets/rocket.png";
 
 export default function Account() {
   return (
     <div className="max-w-7xl mx-auto pt-16 bg-[#F9FAFC] mt-16 flex flex-col justify-center items-center">
-      <h1 className="text-5xl font-bold text-center mb-4">
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-4">
         Get Started in 3 Steps
       </h1>
       <p className="text-[#627382] text-center">
         Start using premium digital tools in minutes, not hours.
       </p>
-      <div className="grid grid-cols-3 gap-8 mt-12 pb-20">
-        <div className="card bg-base-100 w-90 shadow-sm relative text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 pb-20">
+        <div className="card bg-base-100 md:w-90 shadow-sm relative text-center">
           <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">
             01
           </span>

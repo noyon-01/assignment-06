@@ -1,6 +1,6 @@
 export default function Workflow() {
   return (
-    <div className="max-w-7xl mx-auto py-16 mt-16 flex flex-col justify-center items-center bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white">
+    <div className="max-w-7xl mx-auto px-6 py-16 mt-16 flex flex-col justify-center items-center bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white">
       <h1 className="text-[40px] font-bold text-center mb-4">
         Ready to Transform Your Workflow?
       </h1>

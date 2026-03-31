@@ -5,10 +5,11 @@
     "description": "Create professional resumes with ATS-friendly templates.",
     "price": 9.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "file-text"
+    "icon": "file-text",
+    "img": "https://i.ibb.co.com/sk2yYfb/writing-2327400-1.png"
   },
   {
     "id": 2,
@@ -16,10 +17,11 @@
     "description": "Build a stunning personal portfolio website easily.",
     "price": 19.99,
     "period": "one-time",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Responsive design", "Easy customization", "SEO optimized"],
-    "icon": "globe"
+    "icon": "globe",
+    "img": "https://i.ibb.co.com/Vb9HMtW/design-tool.png"
   },
   {
     "id": 3,
@@ -28,9 +30,10 @@
     "price": 4.99,
     "period": "one-time",
     "tag": "new",
-    "tagType": "new",
+    "tagType": "New",
     "features": ["Top interview Q&A", "Real examples", "Tips & tricks"],
-    "icon": "help-circle"
+    "icon": "help-circle",
+    "img": "https://i.ibb.co.com/1GVzWjmT/camera.png"
   },
   {
     "id": 4,
@@ -38,10 +41,11 @@
     "description": "Track your job applications and progress in one place.",
     "price": 6.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["Application tracking", "Status updates", "Analytics"],
-    "icon": "bar-chart"
+    "icon": "bar-chart",
+    "img": "https://i.ibb.co.com/xKXmccvw/operation.png"
   },
   {
     "id": 5,
@@ -49,10 +53,11 @@
     "description": "Grow your personal brand on LinkedIn faster.",
     "price": 12.99,
     "period": "yearly",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Post templates", "Profile optimization", "Content ideas"],
-    "icon": "linkedin"
+    "icon": "linkedin",
+    "img": "https://i.ibb.co.com/fGPLd6wC/social-media.png"
   },
   {
     "id": 6,
@@ -60,10 +65,11 @@
     "description": "Reusable UI components for faster development.",
     "price": 14.99,
     "period": "one-time",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "features": ["50+ components", "Tailwind support", "Clean code"],
-    "icon": "layout"
+    "icon": "layout",
+    "img": "https://i.ibb.co.com/r2npr7Gh/portfolio.png"
   },
   {
     "id": 7,
@@ -71,10 +77,11 @@
     "description": "Improve your coding skills with real challenges.",
     "price": 7.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["Daily challenges", "Leaderboard", "Solutions"],
-    "icon": "code"
+    "icon": "code",
+    "img": "https://i.ibb.co.com/1GVzWjmT/camera.png"
   },
   {
     "id": 8,
@@ -82,10 +89,11 @@
     "description": "Design modern and user-friendly interfaces easily.",
     "price": 24.99,
     "period": "one-time",
-    "tag": "best seller",
+    "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Figma templates", "Design system", "Icons & assets"],
-    "icon": "figma"
+    "icon": "figma",
+    "img": "https://i.ibb.co.com/Vb9HMtW/design-tool.png"
   },
   {
     "id": 9,
@@ -93,9 +101,10 @@
     "description": "Master JavaScript from basics to advanced concepts.",
     "price": 29.99,
     "period": "yearly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "features": ["Beginner to advanced", "Projects included", "Lifetime access"],
-    "icon": "book-open"
+    "icon": "book-open",
+    "img": "https://i.ibb.co.com/xKXmccvw/operation.png"
   }
 ]
