@@ -9,15 +9,20 @@ const Cart = ({ addProduct, setAddProduct }) => {
 
   const total = addProduct.reduce((sum, item) => sum + item.price, 0);
 
+  const handleCheckoutBtn = () => {
+    setAddProduct([]);
+    toast.success("Order is Successfully Completed!");
+  }
+
   return (
     <>
       {addProduct.length === 0 ? (
         <div>
           <h3 className="text-2xl font-bold p-4">Your Cart</h3>
           <div className="flex justify-center items-center p-10">
-            <p className="text-[#627382] text-sm font-semibold">
+            <button className="text-[#627382] text-sm font-semibold">
               Cart is empty.
-            </p>
+            </button>
           </div>
         </div>
       ) : (
@@ -53,6 +58,10 @@ const Cart = ({ addProduct, setAddProduct }) => {
           <div className="flex justify-between items-center my-4">
             <p className="text-[#627382] font-bold">Total:</p>
             <p className="text-2xl font-bold">${total}</p>
+          </div>
+
+          <div>
+            <p onClick={handleCheckoutBtn} className="btn w-full text-xl font-bold text-center bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white rounded py-2 cursor-pointer">Proceed to Checkout</p>
           </div>
         </div>
       )}
