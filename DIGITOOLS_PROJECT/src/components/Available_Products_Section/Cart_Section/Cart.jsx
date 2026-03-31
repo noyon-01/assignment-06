@@ -31,7 +31,7 @@ const Cart = ({ addProduct, setAddProduct }) => {
             return (
               <div
                 key={index}
-                className="flex justify-between items-center w-110 md:w-2xl lg:w-5xl mt-5 bg-[#F9FAFC] p-5 rounded"
+                className="flex justify-between items-center w-90 md:w-2xl lg:w-5xl mt-5 bg-[#F9FAFC] p-5 rounded"
               >
                 <div className="flex justify-center items-center gap-3">
                   <div className="border-2 border-gray-300 bg-white p-3 rounded-full">
