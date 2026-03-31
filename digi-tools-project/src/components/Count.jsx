@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Count() {
   return (
     <div className="max-w-7xl mx-auto bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white mb-15">

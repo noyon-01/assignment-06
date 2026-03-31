@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const SingleProduct = ({ product, addProduct, setAddProduct }) => {
-    const [addBtn, setAddBtn] = useState(false);
+  const [addBtn, setAddBtn] = useState(false);
   const handleAddToCart = () => {
     const isFound = addProduct.find((item) => item.id === product.id);
     if (isFound) {
@@ -54,7 +54,7 @@ const SingleProduct = ({ product, addProduct, setAddProduct }) => {
             onClick={handleAddToCart}
             className="btn bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white btn-block rounded-3xl"
           >
-           {addBtn ? "Add To Cart" : " Buy Now"}
+            {addBtn ? "Add To Cart" : " Buy Now"}
           </button>
         </div>
       </div>

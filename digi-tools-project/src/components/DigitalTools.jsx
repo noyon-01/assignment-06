@@ -46,10 +46,7 @@ const DigitalTools = ({ toolsPromise, addProduct, setAddProduct }) => {
           setAddProduct={setAddProduct}
         />
       ) : (
-        <Cart
-        addProduct={addProduct}
-        setAddProduct={setAddProduct}
-        />
+        <Cart addProduct={addProduct} setAddProduct={setAddProduct} />
       )}
     </div>
   );

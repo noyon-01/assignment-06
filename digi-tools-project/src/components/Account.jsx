@@ -13,35 +13,52 @@ export default function Account() {
       </p>
       <div className="grid grid-cols-3 gap-8 mt-12 pb-20">
         <div className="card bg-base-100 w-90 shadow-sm relative text-center">
-          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">01</span>
+          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">
+            01
+          </span>
           <figure>
-            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={account} />
+            <img
+              className="bg-[#843bfa1f] p-4 rounded-full mt-18"
+              src={account}
+            />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl font-bold">Create Account</h2>
             <p className="text-[#627382]">
-              Sign up for free in seconds. No credit card <br /> required to get started.
+              Sign up for free in seconds. No credit card <br /> required to get
+              started.
             </p>
           </div>
         </div>
 
         <div className="card bg-base-100 w-90 shadow-sm relative text-center">
-          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">02</span>
+          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">
+            02
+          </span>
           <figure>
-            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={packages} />
+            <img
+              className="bg-[#843bfa1f] p-4 rounded-full mt-18"
+              src={packages}
+            />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl font-bold">Choose Products</h2>
             <p className="text-[#627382]">
-              Browse our catalog and select the tools <br /> that fit your needs.
+              Browse our catalog and select the tools <br /> that fit your
+              needs.
             </p>
           </div>
         </div>
 
         <div className="card bg-base-100 w-90 shadow-sm relative text-center">
-          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">03</span>
+          <span className="text-right bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white w-8 h-8 absolute right-5 top-5 rounded-full flex justify-center items-center">
+            03
+          </span>
           <figure>
-            <img className="bg-[#843bfa1f] p-4 rounded-full mt-18" src={rocket} />
+            <img
+              className="bg-[#843bfa1f] p-4 rounded-full mt-18"
+              src={rocket}
+            />
           </figure>
           <div className="card-body">
             <h2 className="text-2xl font-bold">Start Creating</h2>

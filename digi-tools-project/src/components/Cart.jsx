@@ -1,5 +1,3 @@
-import React from "react";
-
 const Cart = ({ addProduct, setAddProduct }) => {
   const handleRemoveBtn = (product) => {
     const filterProduct = addProduct.filter((p) => p.name !== product.name);

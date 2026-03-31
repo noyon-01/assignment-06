@@ -1,4 +1,3 @@
-import React from "react";
 import SingleProduct from "./SingleProduct";
 
 const Products = ({ data, addProduct, setAddProduct }) => {

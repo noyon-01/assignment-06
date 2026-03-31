@@ -24,7 +24,13 @@ function App() {
       <Navber addProduct={addProduct} />
       <Hero />
       <Count />
-      <Suspense fallback={<div className="flex justify-center items-center mt-5"><span className="loading loading-bars loading-xl"></span></div>}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center mt-5">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        }
+      >
         <DigitalTools
           toolsPromise={toolsPromise}
           addProduct={addProduct}

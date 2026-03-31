@@ -50,18 +50,16 @@ export default function Footer() {
         </nav>
       </footer>
 
-       <div className="w-full h-[1px] bg-gray-700"></div>
+      <div className="w-full h-[1px] bg-gray-700"></div>
 
       <footer className="footer flex justify-between items-center bg-black text-white p-6 max-w-7xl px-24 mx-auto">
-            <p>
-              © {new Date().getFullYear()} 2026 Digitools. All rights reserved.
-            </p>
-            <div className="flex justify-center items-center gap-5">
-                <p className="text-[#627382]">Privacy Policy</p>
-                <p className="text-[#627382]">Terms of Service</p>
-                <p className="text-[#627382]">Cookies</p>
-            </div>
-        </footer>
+        <p>© {new Date().getFullYear()} 2026 Digitools. All rights reserved.</p>
+        <div className="flex justify-center items-center gap-5">
+          <p className="text-[#627382]">Privacy Policy</p>
+          <p className="text-[#627382]">Terms of Service</p>
+          <p className="text-[#627382]">Cookies</p>
+        </div>
+      </footer>
     </div>
   );
 }

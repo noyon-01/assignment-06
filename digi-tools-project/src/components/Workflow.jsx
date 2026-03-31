@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Workflow() {
   return (
     <div className="max-w-7xl mx-auto py-16 mt-16 flex flex-col justify-center items-center bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white">
@@ -12,9 +10,13 @@ export default function Workflow() {
       </p>
       <div className="flex justify-center items-center gap-3">
         <button className="btn rounded-3xl">Explore Products</button>
-        <button className="btn btn-outline rounded-3xl w-35 my-6">View Pricing</button>
+        <button className="btn btn-outline rounded-3xl w-35 my-6">
+          View Pricing
+        </button>
       </div>
-      <p className="text-white text-center">14-day free trial • No credit card required • Cancel anytime</p>
+      <p className="text-white text-center">
+        14-day free trial • No credit card required • Cancel anytime
+      </p>
     </div>
   );
 }

@@ -48,12 +48,14 @@ export default function Navber({ addProduct }) {
       <div className="navbar-end">
         <span className="mr-6 flex relative">
           <LuShoppingCart />
-          <div className="badge badge-primary badge-xs absolute left-2.5 bottom-2.5">{addProduct.length}</div>
+          <div className="badge badge-primary badge-xs absolute left-2.5 bottom-2.5">
+            {addProduct.length}
+          </div>
         </span>
-        <a className="mr-6 font-semibold">
-          Login
+        <a className="mr-6 font-semibold">Login</a>
+        <a className="btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white">
+          Get Started
         </a>
-        <a className="btn rounded-3xl bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white">Get Started</a>
       </div>
     </div>
   );
