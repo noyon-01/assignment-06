@@ -1,5 +1,4 @@
 import { Suspense, useState } from "react";
-import "./App.css";
 import DigitalTools from "./components/DigitalTools";
 import Navber from "./components/Navber";
 import Hero from "./components/Hero";
