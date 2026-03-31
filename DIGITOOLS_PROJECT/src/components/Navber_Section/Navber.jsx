@@ -7,7 +7,7 @@ export default function Navber({ addProduct }) {
       <div className="flex justify-between items-center bg-white shadow-sm max-w-7xl mx-auto px-8 py-4">
 
         <div>
-          <img src={logo} alt="" />
+          <img className="w-32 md:w-[180px] md:h-10" src={logo} alt="" />
         </div>
 
         <div className="hidden lg:flex">
