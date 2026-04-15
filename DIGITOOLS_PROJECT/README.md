@@ -4,7 +4,7 @@
 
 - This is a simple product and cart project. By default, users can see the product section and add items to the cart. There are two buttons to switch between Products and Cart. The product section shows selected items with name, description, price, period, tagType, features, icon and a buy now button. The cart section shows selected items with name, price, and a remove button. Users can remove items anytime and also see the total price. The “Proceed to Checkout” button clears all items from the cart.
 
-### Technologies Used on this project is:
+### Technologies Used on this project is: 
 
 - React.js
 - Tailwind CSS & DaisyUI
