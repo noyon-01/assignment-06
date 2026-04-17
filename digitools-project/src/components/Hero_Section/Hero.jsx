@@ -1,6 +1,6 @@
 import circle from "../../assets/circle.png";
 import banner from "../../assets/banner.png";
-import play from "../../assets/play.png";
+import play from "../../assets/play.png"; 
 
 export default function Hero() {
   return (
